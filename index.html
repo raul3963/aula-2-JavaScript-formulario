@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles/index.css" media="screen">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <h2>Formulario de Cadastro</h2>
+    <input id="input-nome" placeholder="Nome" type="text" />
+    <input id="input-sobrenome" placeholder="Sobrenome" type="text" />
+    <input id="input-nascimento" placeholder="Data de Nascimento" type="date" />
+    <br />
+    <div>Sexo</div>
+    <div>
+        <input name="sexo" id="input-masc" type="radio" />
+        Masculino
+    </div>
+    <div>
+        <input name="sexo" id="input-fem" type="radio" />
+        Feminino
+    </div>
+    <br />
+    <div>Linguagem materna</div>
+    <div>
+        <select name="lingua" id="select-lingua">
+            <option disabled selected value>selecionar sua lingua</option>
+            <option value="portugues">Portugues</option>
+            <option value="espanhol">Espanhol</option>
+            <option value="ingles">Ingles</option>
+        </select>
+    </div>
+    <br />
+    <div>
+        Cor Favorita
+    </div>
+    <div>
+        <input type="color" id="input-cor">
+    </div>
+    <br />
+    <div id="erro"></div>
+    <button id="btm-enviar" onclick="enviar()">Enviar</button>
+    <br />
+
+    <h2>Pessoas Cadastradas</h2>
+    <table id="pessoasCad">
+        <tr>
+            <th>Nome</th>
+            <th>Sobrenome</th>
+            <th>Cor</th>
+        </tr>
+
+    </table>
+
+    <script type="text/javascript" src="./scripts/index.js"></script>
+</body>
+
+</html>
